@@ -1,0 +1,11 @@
+{
+  "ServerIP": "localhost",
+  "ServerPort": 8211,
+  "ServerPassword": "adminpasswordhere",
+  "ServerRESTPort": 8212,
+  "ServerPath": "/path/to/server/executable",
+  "ServerParams": "-port=8211 -maxplayers=16 -NumberOfWorkerThreadsServer=4 -logformat=text",
+  "Debugging": false,
+  "LogToFile": true,
+  "WaitForPlayerTimeout": 300
+}

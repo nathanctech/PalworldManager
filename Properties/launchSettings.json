@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "PalworldManager": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker",
+      "publishAllPorts": false,
+      "containerRunArguments": "-p 8211:8211"
+    }
+  }
+}
