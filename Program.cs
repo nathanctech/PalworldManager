@@ -34,6 +34,7 @@ namespace PalworldManager
 
                 while (true)
                 {
+                    await Task.Delay(Config!.WaitForPlayerTimeout * 1000);
                     var players = await _api!.GetPlayers();
                     if (players != null)
                     {
@@ -59,7 +60,6 @@ namespace PalworldManager
                         Info("[Server] Failed to get players, assuming server is down.");
                         break;
                     }
-                    await Task.Delay(Config!.WaitForPlayerTimeout * 1000); // check every WaitForPlayerTimeout seconds
                 }
                 Info("[Server] Server is down, restarting listener...");
             }
